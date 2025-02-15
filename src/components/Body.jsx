@@ -29,6 +29,7 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const data = await fetch(
+        //https://proxy.cors.sh/ - insert before the url to resolve CORS
         "https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9592925&lng=77.7123945&str=Hotel&trackingId=bdebf276-933d-08d2-983d-dd3468f4b977&submitAction=ENTER&queryUniqueId=6f8253b2-3a59-6164-fb82-ce49ff224d00"
       );
 
